@@ -91,7 +91,7 @@
         name: 'Hamilton',
         weather: [
           {
-            main: 'cold'
+            main: 'Rain'
           }
         ],
         main: {
