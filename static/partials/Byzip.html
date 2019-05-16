@@ -1,5 +1,5 @@
 <div>
-    <div class="underline" style="float:left">Current Weather</div>
+    <div class="underline" style="float:left">Current Weather In New Zealand</div>
     <div style="float:left; width:100%; padding-left:15px">
       <div style="float:left; width:100%">
       	<div id="zipcode" class="headerText" style="width:10em">Location</div>
@@ -36,4 +36,16 @@
       	<div id="zip4weather" class="underline">&nbsp;{{zip4Weather}}</div>
       </div>
   	</div>
+  	<div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAih3O7ulJyPn5sNr1f86ZRjM5lOseP0eg&callback=initMap"
+    async defer></script>
 </div>
