@@ -1,7 +1,7 @@
 
 (function () {
 
-  'use strict';
+ 'use strict';
 
 	var requireHelper = require('./requireHelper');
   var apiv1 = requireHelper.require('tests/coverage/instrumented/routes/apiv1');
@@ -79,7 +79,7 @@
       assert(resMock.send.lastCall.args[0].msg === 'Failed', 'Unexpected response:' + resMock.send.lastCall.args);
     });
 
-    /*it('with valid city name', function() {
+    it('with valid city name', function() {
       reqMock = {
         query: {
           q: 'Hamilton'
@@ -91,11 +91,11 @@
         name: 'Hamilton',
         weather: [
           {
-            main: 'Rain'
+            main: 'clouds'
           }
         ],
         main: {
-          temp: 13.05
+          temp: 16
         }
       };
 
@@ -108,11 +108,11 @@
       apiv1.getWeather(reqMock, resMock);
 
       assert(resMock.status.lastCall.calledWith(200), 'Unexpected response:' + resMock.status.lastCall.args);
-      assert(resMock.send.lastCall.args[0].city === 'El Paso', 'Unexpected response:' + resMock.send.lastCall.args[0].city);
-      assert(resMock.send.lastCall.args[0].weather === 'Conditions are cold and temperature is 78 F', 'Unexpected response:' + resMock.send.lastCall.args[0].weather);
-    });*/
+      assert(resMock.send.lastCall.args[0].city === 'Hamilton', 'Unexpected response:' + resMock.send.lastCall.args[0].city);
+      assert(resMock.send.lastCall.args[0].weather === 'Conditions are clouds and temperature is 16 C', 'Unexpected response:' + resMock.send.lastCall.args[0].weather);
+    });
   });
-
+////////////////////////////////////////////////////////////////////////////////////
   /*
   describe('Get Weather 2', function() {
 
