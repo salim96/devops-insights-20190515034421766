@@ -57,6 +57,7 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                     $scope.zip4Weather = response.data.weather;
                     loc4={lat:response.data.latitude, lng:response.data.longitude};
                 } 
+                initMap();
             });
         } else {
             if(which === 1) {
