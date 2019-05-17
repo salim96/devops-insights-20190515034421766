@@ -96,9 +96,10 @@
         ],
         main: {
           temp: 16
-        }
-        coord{
-        	lon:175.28,lat:-37.79
+        },
+        coord:{
+        	lon:175.28,
+        	lat:-37.79
         }
       };
 
