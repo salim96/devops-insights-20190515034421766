@@ -86,11 +86,11 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -41, lng: 173},
-          zoom: 5.3
+          zoom: 5.2
         });
-        var marker1 = new google.maps.Marker({position: loc1, map: map});
-        var marker2 = new google.maps.Marker({position: loc2, map: map});
-        var marker3 = new google.maps.Marker({position: loc3, map: map});
-        var marker4 = new google.maps.Marker({position: loc4, map: map});
+        var marker1 = new google.maps.Marker({position: loc1,label:"1", map: map});
+        var marker2 = new google.maps.Marker({position: loc2,label:"2", map: map});
+        var marker3 = new google.maps.Marker({position: loc3,label:"3", map: map});
+        var marker4 = new google.maps.Marker({position: loc4,label:"4", map: map});
       }
 
